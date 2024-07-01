@@ -1,0 +1,77 @@
+/* src/css/Nav.css */
+.nav-container {
+  position: sticky;
+  top: 0;
+  background-color: #fff; /* Fondo blanco */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  z-index: 1000; /* Asegura que esté sobre el contenido */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra horizontalmente */
+}
+
+.nav {
+  width: 100%;
+  max-width: 1901px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.contact-info {
+  margin-bottom: 10px;
+  font-size: small;
+  color: #000;
+  font-family: Cambria, Georgia, serif;
+  padding: 0 6vh;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 5vh;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column; /* Columna para el logo y el eslogan */
+  align-items: flex-start; /* Alinea a la izquierda */
+  text-decoration: none; /* Quita subrayado del enlace */
+}
+
+.logo_text {
+  font-size: 1.2rem; /* Tamaño del texto del logo */
+  font-weight: bold; /* Texto en negrita */
+  color: #d32213; /* Color CLUB GRAU */
+  font-family: Cambria, Georgia, serif; /* Fuente */
+}
+
+.logo_slogan {
+  font-size: 0.8rem; /* Tamaño del eslogan */
+  font-family: Cambria, Georgia, serif; /* Fuente */
+}
+
+.nav-links {
+  list-style-type: none; /* Quita viñetas de la lista */
+  padding: 0 5vh;
+  margin: 0;
+}
+
+.nav-link {
+  text-decoration: none; /* Quita subrayado del enlace */
+  color: #000; /* Color negro */
+  font-family: Cambria, Georgia, serif; /* Fuente */
+}
+
+.nav-link:hover {
+  color: #d32213; /* Color CLUB GRAU al hacer hover */
+}
+
+.linea {
+  width: 100% !important;
+  position: relative;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.592) !important;
+  border-bottom: solid 5px rgba(211, 34, 19, 0.7);
+}

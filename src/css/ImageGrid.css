@@ -19,7 +19,7 @@
 .image {
   display: block;
   width: 100%;
-  height: 500px; /* Ajusta esto según tu necesidad */
+  height: 400px; /* Ajusta esto según tu necesidad */
   object-fit: cover;
 }
 
