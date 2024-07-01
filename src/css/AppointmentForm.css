@@ -1,0 +1,36 @@
+/* src/styles/AppointmentForm.css */
+form {
+  background: linear-gradient(to bottom right, #8B0000, #FF6347); /* Degradado de rojo oscuro a más claro */
+  padding: 20px;
+  border-radius: 20px; /* Bordes redondeados */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 500px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para un efecto más estético */
+}
+
+fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+div {
+  margin-top: 10px;
+}
+
+div label, div input {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+div label {
+  margin-right: 10px; /* Ajuste de margen */
+}
+
+legend {
+  color: azure;
+}
