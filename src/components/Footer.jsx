@@ -1,11 +1,14 @@
 // eslint-disable-next-line no-unused-vars
-import React from 'react';
+import React from "react";
+import "../css/Footer.css";
 
 const Footer = () => {
   return (
     <footer>
-      {/* Contenido del pie de página */}
-      <h4>aqui esta el footer</h4>
+      <div className="f-info">
+        {/* Contenido del pie de página */}
+        <h4>aqui esta el footer</h4>
+      </div>
     </footer>
   );
 };
