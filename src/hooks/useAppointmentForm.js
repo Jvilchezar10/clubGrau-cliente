@@ -12,6 +12,7 @@ const useAppointmentForm = () => {
     email: "",
     celular: "",
     archivo: null,
+    archivo_dni: null, // Campo para el archivo adicional
   });
 
   const handleChange = (e) => {
@@ -20,7 +21,8 @@ const useAppointmentForm = () => {
   };
 
   const handleFileChange = (e) => {
-    setFormData({ ...formData, archivo: e.target.files[0] });
+    const { name, files } = e.target;
+    setFormData({ ...formData, [name]: files[0] });
   };
 
   const handleSubmit = async (e) => {
@@ -32,6 +34,10 @@ const useAppointmentForm = () => {
     data.append("email", formData.email);
     data.append("celular", formData.celular);
     data.append("archivo", formData.archivo);
+
+    if (formData.archivo_dni) {
+      data.append("archivo_dni", formData.archivo_dni); // Agrega el archivo adicional si existe
+    }
 
     try {
       await axios.post("/api/appointment", data, {

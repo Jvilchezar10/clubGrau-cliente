@@ -3,6 +3,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+
 const Confirmation = () => (
   <div>
     <h1>Gracias por su tiempo</h1>

@@ -4,12 +4,12 @@ import "../css/Footer.css";
 
 const Footer = () => {
   return (
-    <footer>
-      <div className="f-info">
+    <div className="footer-container">
+      <footer className="footer">
         {/* Contenido del pie de página */}
         <h4>aqui esta el footer</h4>
-      </div>
-    </footer>
+      </footer>
+    </div>
   );
 };
 

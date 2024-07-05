@@ -1,0 +1,35 @@
+/* Contenedor principal */
+.image-details-container {
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 860px;
+}
+
+/* Primera fila: imagen o lógica de nuevas imágenes */
+.image-container {
+  margin-bottom: 20px;
+}
+
+/* Segunda fila: dos columnas */
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Columna izquierda: relacionado con socio / no socios */
+.column-left {
+  flex: 1;
+  margin-right: -22px;
+  background-color: red;
+}
+
+/* Columna derecha: botón */
+.column-right {
+  flex: 1;
+  margin-left: 10px;
+  background-color: blue;
+}
+
+.button-container {
+  margin-top: 20px;
+}

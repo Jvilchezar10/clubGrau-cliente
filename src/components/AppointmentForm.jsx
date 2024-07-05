@@ -2,10 +2,13 @@
 import InputForm from "./InputForm";
 import useAppointmentForm from "../hooks/useAppointmentForm";
 import "../css/AppointmentForm.css";
+import { useLocation } from "react-router-dom";
 
 const AppointmentForm = () => {
   const { formData, handleChange, handleFileChange, handleSubmit } =
     useAppointmentForm();
+  const location = useLocation();
+  const { isMember } = location.state || { isMember: true }; // Default to true if not provided
 
   return (
     <form onSubmit={handleSubmit}>
@@ -54,6 +57,18 @@ const AppointmentForm = () => {
           onChange={handleFileChange}
           required
         />
+        <br />
+        {isMember && (
+          <>
+            <label htmlFor="additionalFile">Archivo Adicional:</label>
+            <input
+              type="file"
+              id="additionalFile"
+              name="additionalFile"
+              onChange={handleFileChange}
+            />
+          </>
+        )}
         <br />
         <button type="submit">Enviar</button>
       </fieldset>
