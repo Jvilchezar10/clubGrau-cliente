@@ -1,16 +1,16 @@
 // src/components/ImageGrid.jsx
 import { Link } from "react-router-dom";
-import imagePaths from "../utils/imagePaths";
+import imageGroups from "../utils/imagePaths";
 import "../css/ImageGrid.css";
 
 const ImageGrid = () => (
   <>
     <div className="image-grid">
-      {imagePaths.map((path, index) => (
+    {imageGroups.map((group, index) => (
         <Link to={`/details/${index}`} key={index} className="card">
-          <img src={path} alt={`Imagen ${index}`} className="image" />
+          <img src={group.principal} alt={`Imagen Principal ${index}`} className="image" />
           <div className="overlay">
-            <div className="text">Referencia de la imagen {index}</div>
+            <div className="text">Referencia del grupo {index}</div>
           </div>
         </Link>
       ))}

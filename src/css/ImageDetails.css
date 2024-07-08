@@ -5,9 +5,42 @@
   max-width: 860px;
 }
 
-/* Primera fila: imagen o lógica de nuevas imágenes */
-.image-container {
+/* Contenedor del grupo de imágenes */
+.image-group-container {
+  display: flex;
   margin-bottom: 20px;
+}
+
+/* Columna principal: imagen principal */
+.column-main {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.main-image {
+  width: 100%;
+  height: auto;
+}
+
+/* Columna secundaria: contenedor de las sub-columnas */
+.column-sub {
+  display: flex;
+  flex: 1;
+  gap: 10px;
+}
+
+/* Sub-columnas para las imágenes del grupo */
+.sub-column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+
+.group-image {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
 }
 
 /* Segunda fila: dos columnas */
