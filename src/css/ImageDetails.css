@@ -2,7 +2,7 @@
 .image-details-container {
   padding: 20px;
   margin: 0 auto;
-  max-width: 860px;
+  max-width: 1000px;
 }
 
 /* Contenedor del grupo de imágenes */
@@ -63,6 +63,3 @@
   background-color: blue;
 }
 
-.button-container {
-  margin-top: 20px;
-}
